@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&display=swap');
+@import "tailwindcss";
+@import "tailwindcss-safe-area";
+
+@theme {
+  --text-xs: 12px;
+  --text-xs--line-height: 16px;
+  --text-sm: 14px;
+  --text-sm--line-height: 20px;
+  --text-base: 16px;
+  --text-base--line-height: 24px;
+  --text-lg: 18px;
+  --text-lg--line-height: 28px;
+  --text-xl: 20px;
+  --text-xl--line-height: 28px;
+  --text-2xl: 24px;
+  --text-2xl--line-height: 32px;
+  --text-3xl: 30px;
+  --text-3xl--line-height: 36px;
+  --font-display: "Zen Maru Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+}
+
+:root {
+  color-scheme: light dark;
+  --bg: #fff8f0;
+  --surface: #ffffff;
+  --surface-alt: #f5ede3;
+  --text: #2b211a;
+  --dim: #7a6a5e;
+  --border: #e9dccf;
+  --accent: #c2571b;
+  --accent-soft: #fbeadd;
+  --sage: #5f7d5a;
+  --sage-soft: #e9efe4;
+  --warn: #b3261e;
+  --warn-soft: #fbe9e7;
+  --radius: 14px;
+  --space-surface: var(--surface);
+  --space-surface-alt: var(--surface-alt);
+  --space-muted: var(--dim);
+  --space-border: var(--border);
+  --space-accent: var(--accent);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1712;
+    --surface: #2a211a;
+    --surface-alt: #332820;
+    --text: #f5ece2;
+    --dim: #b3a08e;
+    --border: #453729;
+    --accent: #e88a4e;
+    --accent-soft: #3d2a1c;
+    --sage: #9db894;
+    --sage-soft: #2c3527;
+    --warn: #f0928a;
+    --warn-soft: #3d2320;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
